@@ -166,7 +166,7 @@ GET /my_index/_rank_eval
      {
         "id": "match_one_field_query",  <1>
         "template": { <2>
-            "inline": { 
+            "source": { 
                 "query": { 
                   "match": { "{{field}}": { "query": "{{query_string}}" }}
                 }
